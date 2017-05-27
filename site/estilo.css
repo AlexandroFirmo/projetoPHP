@@ -1,0 +1,192 @@
+/* ================= LAYOUT =================*/
+
+html, body, #capa-principal{
+	height: 100%;
+}
+body{
+	background-color: #E7E6E4;		
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+	overflow-x: hidden;
+	
+	
+}
+/* ----- BARRA DE NAVEGAÇÃO ----- */
+
+.img-logo{
+	width: 132px;
+	height: 100px;
+	display: block;
+	background: url('imagens/logo.png') no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+
+
+nav.navbar-transparente{
+	padding: 35px 0px;
+	background: #FFF5EE;
+	border: none;
+	
+}
+.navbar-brand{
+	padding-top: 0px;
+	padding-bottom: 25px;
+}
+
+
+.navbar-nav >li>a{
+	color: black;
+}
+.navbar-nav >li>a:hover{
+	color: #696969;
+	background: none;
+}
+
+
+
+/* ---- BOTÕES ---- */ 
+.btn-botao{
+	background-color: #8B8378;
+	color: #000;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	padding: 10px 35px;
+	margin: 0px 15px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+}
+
+.btn-botao:hover{
+	background-color: #696969;
+	color: #000;
+}
+
+/* ---- Seção Capa Principal ---- */ 
+
+#capa-principal{
+	padding-top: 130px;
+	padding-bottom: 30px;
+	display: table;
+	width: 100%;
+}
+
+.capa{
+	display: table;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+#carousel{
+	padding: 10px;
+	background: contain;
+}
+
+
+/* ---- Seção serviço ---- */ 
+#sobre-nos{
+	background: #BEBEBE;
+	padding-top: 120px;
+	padding-bottom: 100px;
+}
+#logo-sobre{
+	padding: 20px;
+}
+
+/* ---- Seção recursos ---- */ 
+#servicos{
+	padding-top: 120px;
+	padding-bottom: 100px;
+	background: white;
+}
+.serv{
+	padding: 20px;
+}
+
+/* ---- Seção Orçamento ---- */ 
+
+#orcamento{
+	padding-top: 120px;
+	padding-bottom: 100px;
+	background: #BEBEBE;;
+}
+
+.div-orcamento{
+	vertical-align: middle;
+}
+/* ---- Seção Orçamento ---- */ 
+
+#contato{
+	padding-top: 120px;
+	padding-bottom: 100px;
+	background: white;
+}
+
+/* ---- Galeria ---- */ 
+#galeria{
+	padding-top: 120px;
+	padding-bottom: 100px;
+}
+
+/* ---- Rodapé ---- */ 
+footer{
+	padding-top: 120px;
+	padding-bottom: 100px;
+	position: relative;
+	background: #BEBEBE;
+}
+.item-rede-social{
+	float: right;
+}
+
+
+
+/* ============== TIPOGRAFIA ==================*/
+h1{
+	font-size: 100px;
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+}
+h2{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	color: #000;
+}
+h3{
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+}
+
+h4{
+	font-size: 25px;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+}
+h4 a{
+	color: #000;
+}
+h4 a:hover{
+	color: #BEBEBE;
+	background: none;
+}
+#rodape h4{
+	color: black;
+	font-size: 12px;
+	text-transform: uppercase;
+	
+}
+#rodape a{
+	color: black;
+}
+
+#rodape a:hover{
+	color: #E7E6E4;
+	background: none;
+}
+
+
