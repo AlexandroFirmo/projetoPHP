@@ -1,6 +1,6 @@
 <?php
 
-include "../objetos/Ilustracao.php";
+include "objetos/Ilustracao.php";
 
 $id = $_GET['id'];
 

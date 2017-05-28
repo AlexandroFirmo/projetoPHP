@@ -1,6 +1,6 @@
 <?php
 
-include "../objetos/blog.php";
+include "objetos/blog.php";
 
 $obj = new Blog ();
 

@@ -34,28 +34,18 @@
 		
 		public function adicionarPostagem($obj){
 			$dao = new DaoBlog();
-			$dao -> adicionarPostagem($obj);
-			
-		}
-		public function buscarPostagem($id){
-			$dao = new DaoBlog();
-			return $dao -> buscarPostagem($id);
-			
-		}
-		public function buscarAssunto($assunto){
-			$dao = new DaoBlog();
-			return $dao -> buscarAssunto($assunto);
+			return $dao -> adicionarPostagem($obj);
 			
 		}
 		
 		public function atualizarPostagem($obj){
 			$dao = new DaoBlog();
-			$dao -> atualizarPostagem($obj);
+			return $dao -> atualizarPostagem($obj);
 			
 		}
 		public function apagarPostagem($obj){
 			$dao = new DaoBlog();
-			$dao -> apagarPostagem($obj);
+			return $dao -> apagarPostagem($obj);
 		
 		}
 	}

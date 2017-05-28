@@ -52,7 +52,7 @@
 			<li><a href="#servicos">Serviços</a></li>
 			<li><a href="#orcamento">Orçamento</a></li>
 			<li><a href="#contato">Contato</a></li>
-			<li><a href="?pg=blog">Blog</a></li>
+			<li><a href="blog.php">Blog</a></li>
 			</ul>
 			
 	</div>

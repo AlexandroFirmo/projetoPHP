@@ -28,7 +28,7 @@
 			<li><a href="?pg=serv">Serviços</a></li>
 			<li><a href="?pg=orc">Orçamento</a></li>
 			<li><a href="?pg=contact">Orçamento</a></li>
-			<li><a href="?pg=blog">Blog</a></li>
+			<li><a href="?pg=main/postagens&id=0">Blog</a></li>
 			</ul>
 			
 	</div>

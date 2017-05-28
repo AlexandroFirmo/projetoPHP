@@ -1,6 +1,6 @@
 <?php
 
-include "../ilustracao.php";
+include "objetos/ilustracao.php";
 
 $obj = new Ilustracao();
 

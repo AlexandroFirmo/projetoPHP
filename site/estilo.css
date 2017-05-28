@@ -141,6 +141,31 @@ footer{
 	float: right;
 }
 
+/* ---- Seção Blog ---- */ 
+.row.content {
+	height: 1500px
+}
+    
+.sidenav {
+    background-color: #BEBEBE;
+    height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+.sidenav {
+    height: auto;
+    padding: 15px;
+}
+.row.content {height: auto;} 
+}
+.pagination{
+	display: center-block;
+}
+.container-fluid{
+	padding-top: 120px;
+	padding-bottom: 100px;
+}
+
 
 
 /* ============== TIPOGRAFIA ==================*/

@@ -19,12 +19,12 @@ include "objetos/orcamento.php";
 		echo "<script>
     alert('enviado com sucesso!!')</script>";
 		/*echo "<div style='width:200px;
-height:100px;
-background:#f00;
-position:absolute;
-z-index:100;
-top:30%;
-left:50%;'> <h1> olá mundo</h1><div>";*/
+	height:100px;
+	background:#f00;
+	position:absolute;
+	z-index:100;
+	top:30%;
+	left:50%;'> <h1> olá mundo</h1><div>";*/
 	}else{
 		echo "<script>
     alert('Erro ao enviar')</script>";

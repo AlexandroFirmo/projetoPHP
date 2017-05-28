@@ -17,48 +17,6 @@
 			return $todos;
 		}
 		
-		public function buscarPostagem($id){
-			
-			if($id==0){
-				
-			$sql = "SELECT * FROM blog ORDER BY id DESC LIMIT 5";
-			
-			$todos = $this -> banco($sql,"query");
-			
-			
-			return $todos;
-			
-			}else{
-				
-		
-			$sql = "SELECT * FROM blog WHERE id<='$id' ORDER BY id DESC LIMIT 5";
-			
-			$todos = $this -> banco($sql,"query");
-			
-			
-			return $todos;
-				
-			}
-			
-			
-		}
-		
-		function buscarAssunto($assunto){
-				
-		
-			$sql = "SELECT * FROM blog WHERE conteudo LIKE '%$assunto%' ORDER BY id DESC LIMIT 5";
-			
-			$todos = $this -> banco($sql,"query");
-			
-			
-			return $todos;
-				
-			
-			
-		}
-		
-		
-		
 		function apagarPostagem($id){
 			
 			$sql = "DELETE FROM blog WHERE id = $id";
@@ -82,7 +40,7 @@
 			return $todos;
 		}
 		
-		function buscarBlog($id){
+		public function buscarBlog($id){
 			$sql = "Select * from blog where id = '$id'";
 			
 			$todos = $this -> banco($sql,"query");
@@ -94,7 +52,7 @@
 		
 		function listarBlog(){
 			
-			$sql = "Select * from blog order by id desc";
+			$sql = "Select * from blog order by id";
 			
 			$todos = $this -> banco($sql,"query");
 			
@@ -106,16 +64,16 @@
 		
 		function banco($sql,$tipo){
 			
-			include'main/objetos/config.inc.php';
+			include'objetos/config.inc.php';
 			
 			$res = null;
 			try {
-			if($tipo=="query"){
-				return $res = $conn -> query($sql) ;
-			}else{
-				return $res = $conn -> exec($sql) ;
-			}
-			}
+				if($tipo=="query"){
+					return $res = $conn -> query($sql) ;
+				}else{
+					return $res = $conn -> exec($sql) ;
+				}
+				}
 			catch(PDOException $e)
 			{
 				return $res;

@@ -23,16 +23,22 @@
 <body>
 	<?php
 	include_once("top.php");
-	
 	?>
 
 <div id="conteudo" class="container">
 						
 	<h2>Video Animações:</h2>
-    <iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=8KGbGA2N7cA?controls=0">
-    </iframe> 
-					
+	<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=8KGbGA2N7cA?controls=0"></iframe>
 </div>
 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
+
+	<?php
+	include_once("bottom.php");
+	?>

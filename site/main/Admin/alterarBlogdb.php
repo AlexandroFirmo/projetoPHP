@@ -1,6 +1,6 @@
 <?php
 
-include "../objetos/Blog.php";
+include "objetos/Blog.php";
 
 $obj = new Blog();
 
@@ -16,5 +16,11 @@ $obj -> __set("data",$_POST['data']);
 
 $todos = $obj -> atualizarPostagem($obj);
 
-echo "Atualizado";
+if($todos!=null){
+	echo "Atualizado";
+}else{
+	echo "Erro no banco";
+}
+
+
 ?>

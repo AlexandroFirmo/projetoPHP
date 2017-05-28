@@ -1,7 +1,7 @@
 <?php
 
 
-include "../objetos/blog.php";
+include "objetos/blog.php";
 try{
 	$obj = new Blog();
 

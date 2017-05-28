@@ -50,7 +50,7 @@
 		
 		$todos = $dao -> listarBlog();
 
-		if($todos->rowCount()>0){
+		if($todos!=null){
 			include "listarBlog.php";
 		}else{
 			echo "<h1>Lista Esta Vazia</h1>";
