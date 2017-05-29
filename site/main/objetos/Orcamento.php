@@ -38,13 +38,16 @@ class Orcamento{
 		
 	}
 	public function gerenciarOrcamento(){	
-		
+		$dao = new DaoOrcamento();
+		return $dao ->	gerenciarOrcamento();
 	}
-	public function apagarOrcamento(){	
-		
+	public function apagarOrcamento($id){	
+		$dao = new DaoOrcamento();
+		return $dao -> apagarOrcamento($id);
 	}
-	public function modificarOrcamento(){	
-		
+	public function modificarOrcamento($id){	
+		$dao = new DaoOrcamento();
+		return $dao -> modificarOrcamento($id);
 	}
 }
 

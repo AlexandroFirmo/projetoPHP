@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 27-Maio-2017 às 15:43
+-- Generation Time: 29-Maio-2017 às 03:38
 -- Versão do servidor: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -50,7 +50,7 @@ INSERT INTO `admin` (`id`, `nome`, `email`, `senha`, `telefone`) VALUES
 CREATE TABLE `blog` (
   `id` int(11) NOT NULL,
   `titulo` varchar(500) DEFAULT NULL,
-  `conteudo` varchar(500) DEFAULT NULL,
+  `conteudo` varchar(2000) DEFAULT NULL,
   `assinatura` varchar(500) DEFAULT NULL,
   `data` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -60,10 +60,12 @@ CREATE TABLE `blog` (
 --
 
 INSERT INTO `blog` (`id`, `titulo`, `conteudo`, `assinatura`, `data`) VALUES
-(4, 'sdfasd', 'sdfasdf', 'asdfasd', '21561'),
-(5, 'fsdaf', '', 'fasdf', 'asdfa'),
-(6, 'sdfa', '', 'dfas', 'sfda'),
-(7, 'sdfsa', 'dsfsdaf', 'dfsa', 'asdfasd');
+(10, 'Teste', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac porttitor risus. In ut nunc sapien. Ut cursus ipsum massa. Donec massa quam, rutrum eget nulla eget, aliquam rhoncus lacus. Vestibulum facilisis posuere massa at hendrerit. Etiam eu dolor vitae diam commodo mattis ut non arcu. Donec nulla ipsum, molestie vitae convallis a, tincidunt non neque. Vivamus ornare cursus leo eu dignissim. Phasellus vitae magna tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut turpis posuere, convallis elit non, dictum nisl. Donec in mauris et augue sagittis dapibus.\r\n\r\nMauris sodales ac enim et aliquet. Nullam in viverra urna. Ut dignissim vel libero et lacinia. Nullam erat eros, malesuada vel tempus dapibus, molestie ac felis. Morbi faucibus est quam, eu condimentum velit finibus vitae. Vivamus posuere pulvinar massa, vel commodo arcu fermentum vel. Aliquam commodo vel turpis sed sodales. Aenean euismod erat vitae condimentum auctor. Nam commodo, dolor nec luctus mattis, elit felis blandit eros, vel hendrerit leo ex vel nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc vitae nulla pellentesque turpis imperdiet pellentesque in vitae felis.', 'alex', '27/05/2017'),
+(22, 'texto', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra neque diam, eget elementum mauris vestibulum sed. Integer sem nunc, scelerisque sit amet nibh faucibus, convallis scelerisque dolor. Donec efficitur rhoncus ex, vel cursus ipsum finibus nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec ac justo nunc. Curabitur eget dolor scelerisque, pulvinar est ac, elementum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo, augue ut feugiat tempor, augue quam interdum erat, eu fermentum lacus ante eu quam. Quisque at ullamcorper urna. Ali', 'alex', '28-05-2017'),
+(23, 'texte4', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra neque diam, eget elementum mauris vestibulum sed. Integer sem nunc, scelerisque sit amet nibh faucibus, convallis scelerisque dolor. Donec efficitur rhoncus ex, vel cursus ipsum finibus nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec ac justo nunc. Curabitur eget dolor scelerisque, pulvinar est ac, elementum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo, augue ut feugiat tempor, augue quam interdum erat, eu fermentum lacus ante eu quam. Quisque at ullamcorper urna. Ali', 'joÃ£o', '28-05-2017'),
+(24, 'texto 5', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra neque diam, eget elementum mauris vestibulum sed. Integer sem nunc, scelerisque sit amet nibh faucibus, convallis scelerisque dolor. Donec efficitur rhoncus ex, vel cursus ipsum finibus nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec ac justo nunc. Curabitur eget dolor scelerisque, pulvinar est ac, elementum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo, augue ut feugiat tempor, augue quam interdum erat, eu fermentum lacus ante eu quam. Quisque at ullamcorper urna. Ali', 'joÃ£o', '28-05-2017'),
+(25, 'arquiteto', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra neque diam, eget elementum mauris vestibulum sed. Integer sem nunc, scelerisque sit amet nibh faucibus, convallis scelerisque dolor. Donec efficitur rhoncus ex, vel cursus ipsum finibus nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec ac justo nunc. Curabitur eget dolor scelerisque, pulvinar est ac, elementum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo, augue ut feugiat tempor, augue quam interdum erat, eu fermentum lacus ante eu quam. Quisque at ullamcorper urna. Alia', 'alex', '28-05-2017'),
+(26, 'primeiro', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra neque diam, eget elementum mauris vestibulum sed. Integer sem nunc, scelerisque sit amet nibh faucibus, convallis scelerisque dolor. Donec efficitur rhoncus ex, vel cursus ipsum finibus nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec ac justo nunc. Curabitur eget dolor scelerisque, pulvinar est ac, elementum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo, augue ut feugiat tempor, augue quam interdum erat, eu fermentum lacus ante eu quam. Quisque at ullamcorper urna. Ali', 'alex', '28-05-2017');
 
 -- --------------------------------------------------------
 
@@ -119,7 +121,10 @@ INSERT INTO `contato` (`id`, `nome`, `telefone`, `email`, `titulo`, `mensagem`) 
 (33, 'afsdfsdf', '34234', 'asdfasd@dsdfsad', 'asdfa', 'sdfsdfa'),
 (34, 'adfsd', '4', 'alexandro_firmo@hotmail.com', 'adfa', 'dfasd'),
 (35, 'sdfas', '6', 'alexandro_firmo@hotmail.com', 'adfa', 'sdfasd'),
-(36, 'as', '3', 'alexandro_firmo@hotmail.com', 'fasd', 'fdasf');
+(36, 'as', '3', 'alexandro_firmo@hotmail.com', 'fasd', 'fdasf'),
+(37, 'tret', '226', 'ertwe@fw', 'werte', 'rtwe'),
+(38, 'a', '32434', 'alexandro_firmo@hotmail.com', 'dsfas', 'sdfa'),
+(39, 'sdfa', '5345', 'alexandro_firmo@hotmail.com', '345', '3453');
 
 -- --------------------------------------------------------
 
@@ -176,7 +181,8 @@ INSERT INTO `ilustracao` (`id`, `descricao`, `tipoIlustracao`) VALUES
 (22, 'rqwer', 'rqw'),
 (23, 'dlfajs', 'dfasldfÃ§k'),
 (24, 'ewfsdfdsfasdf', 'sdfasdfasdfa'),
-(25, 'admin', 'ddsfsdfa');
+(25, 'admin', 'ddsfsdfa'),
+(26, 'foto', 'xxxx');
 
 -- --------------------------------------------------------
 
@@ -190,24 +196,33 @@ CREATE TABLE `orcamento` (
   `email` varchar(100) DEFAULT NULL,
   `telefone` varchar(20) DEFAULT NULL,
   `atributoOrcamento` varchar(15) DEFAULT NULL,
-  `documento` varchar(50) DEFAULT NULL
+  `documento` varchar(50) DEFAULT NULL,
+  `servico` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `orcamento`
 --
 
-INSERT INTO `orcamento` (`id`, `nome`, `email`, `telefone`, `atributoOrcamento`, `documento`) VALUES
-(1, 'dd', 'alexandro_firmo@hotmail.com', '333', 'imgInt', '4'),
-(2, 'alex', 'alexandro_firmo@hotmail.com', '5', 'imgExt', '2'),
-(3, 'asdfa', 'alexandro_firmo@hotmail.com', '-5', 'imgExt', '3'),
-(4, 'sdfsd', 'alexandro_firmo@hotmail.com', '7', 'imgExt', '-6'),
-(5, 'sdfsd', 'alexandro_firmo@hotmail.com', '4', 'imgExt', '5'),
-(6, 'alexa', 'alexandro_firmo@hotmail.com', '3', 'imgHum', '6'),
-(7, '', '', '', '', ''),
-(8, '', '', '', '', ''),
-(9, 'alex', 'alexandro_firmo@hotmail.com', '-8', '', ''),
-(10, 'alex', 'alexandro_firmo@hotmail.com', '-8', '', '');
+INSERT INTO `orcamento` (`id`, `nome`, `email`, `telefone`, `atributoOrcamento`, `documento`, `servico`) VALUES
+(3, 'ddd', 'ddd', 'telefone', 'atributoOrcamen', 'documento', 'xxx'),
+(4, 'sdfsd', 'alexandro_firmo@hotmail.com', '7', 'imgExt', '-6', NULL),
+(5, 'sdfsd', 'alexandro_firmo@hotmail.com', '4', 'imgExt', '5', NULL),
+(7, '', '', '', '', '', NULL),
+(8, '', '', '', '', '', NULL),
+(9, 'alex', 'alexandro_firmo@hotmail.com', '-8', '', '', NULL),
+(10, 'alex', 'alexandro_firmo@hotmail.com', '-8', '', '', NULL),
+(11, 'alex', 'alexandro_firmo@hotmail.com', '6', '', '5', NULL),
+(12, 'aAsdf', 'fasdfas@fsdfsdf', '5585', 'imgExt', '5', NULL),
+(13, '', '', '', '', '', NULL),
+(14, 'a', 'alexandro_firmo@hotmail.com', '333', 'imgExt', '4', NULL),
+(15, '', '', '', '', '', NULL),
+(16, '', '', '', '', '', NULL),
+(17, 'sfasd', 'sdfasdf!@hotmail.com', '6', 'imgExt', '-3', NULL),
+(18, 'sad', '', '', '', '', NULL),
+(19, 'alex', 'alexandro_firmo@hotmail.com', '455464', 'imgHum', '4', NULL),
+(20, 'xxx', 'a@fxxxxxxxxxxxxxx', '555555555', 'imgExt', '5', NULL),
+(21, 'xxx', 'a@fxxxxxxxxxxxxxx', '555555555', 'imgExt', '5', NULL);
 
 -- --------------------------------------------------------
 
@@ -294,12 +309,12 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `blog`
 --
 ALTER TABLE `blog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT for table `contato`
 --
 ALTER TABLE `contato`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 --
 -- AUTO_INCREMENT for table `empresa`
 --
@@ -314,12 +329,12 @@ ALTER TABLE `galeria`
 -- AUTO_INCREMENT for table `ilustracao`
 --
 ALTER TABLE `ilustracao`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT for table `orcamento`
 --
 ALTER TABLE `orcamento`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 --
 -- AUTO_INCREMENT for table `usuarios`
 --

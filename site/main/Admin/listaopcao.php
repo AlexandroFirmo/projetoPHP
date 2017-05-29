@@ -5,6 +5,7 @@
 			<option value="2">Galeria Imagem</option>
 			<option value="3">Galeria Video</option>
 			<option value="4">Blog</option>
+			<option value="5">Gerencia Orçamentos</option>
         </select>
 		<div class="form-group" style="margin:12px">
 			<button class="btn btn-primary" id="total" name="lista" >&ensp;listar&ensp;</button>

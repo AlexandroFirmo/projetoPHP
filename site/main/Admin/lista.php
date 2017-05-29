@@ -2,6 +2,7 @@
 	include "objetos/Ilustracao.php";
 	include "objetos/Galeria.php";
 	include "objetos/Blog.php";
+	include "objetos/Orcamento.php";
 	
 	$opcao = $_POST['opcao'];
 	$cont = 0;
@@ -52,6 +53,20 @@
 
 		if($todos!=null){
 			include "listarBlog.php";
+		}else{
+			echo "<h1>Lista Esta Vazia</h1>";
+		}
+		
+        break;
+		
+	case 5:
+	
+        $dao = new Orcamento();
+		
+		$todos = $dao -> gerenciarOrcamento();
+
+		if($todos!=null){
+			include "listarOrcamentos.php";
 		}else{
 			echo "<h1>Lista Esta Vazia</h1>";
 		}

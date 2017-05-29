@@ -19,6 +19,54 @@
 			return $todos;
 		}
 		
+		function modificarOrcamento($obj){
+			
+			$id = $obj -> id;
+			$nome = $obj -> nome;
+			$email = $obj -> email;
+			$telefone = $obj -> telefone;
+			$atributoOrcamento = $obj -> atributosOrcamento;
+			$servico =$obj -> observacoes;
+			$documento = $obj -> documento;
+			
+			$sql ="UPDATE orcamento SET nome='$nome',email='$email',telefone='$telefone',atributoOrcamento='$atributoOrcamento',documento='$documento',servico='$servico' WHERE id = '$id'";
+
+
+			
+			$todos = $this -> banco($sql,"exec");
+			
+			return $todos;
+		}
+		function gerenciarOrcamento(){
+			
+			$sql = "Select * from orcamento order by id";
+			
+			$todos = $this -> banco($sql,"query");
+			
+			return $todos;
+			
+
+		}
+		function buscarOrcamento($id){
+			
+			$sql = "Select * from orcamento where id='$id'";
+			
+			$todos = $this -> banco($sql,"query");
+			
+			return $todos;
+			
+
+		}
+		
+		function apagarOrcamento($id){
+			
+			$sql = "DELETE FROM orcamento WHERE id = $id";
+			$todos = $this -> banco($sql,"exec");
+			
+			return $todos;
+		}
+		
+		
 		
 		
 		function banco($sql,$tipo){

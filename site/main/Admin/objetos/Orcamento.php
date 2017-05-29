@@ -37,14 +37,22 @@ class Orcamento{
 		return $dao -> pedirOrcamento($obj);
 		
 	}
+	public function buscarOrcamento($id){
+		$dao = new DaoOrcamento();
+		return $dao -> buscarOrcamento($id);
+		
+	}
 	public function gerenciarOrcamento(){	
-		
+		$dao = new DaoOrcamento();
+		return $dao ->	gerenciarOrcamento();
 	}
-	public function apagarOrcamento(){	
-		
+	public function apagarOrcamento($id){	
+		$dao = new DaoOrcamento();
+		return $dao -> apagarOrcamento($id);
 	}
-	public function modificarOrcamento(){	
-		
+	public function modificarOrcamento($obj){	
+		$dao = new DaoOrcamento();
+		return $dao -> modificarOrcamento($obj);
 	}
 }
 
